@@ -1,0 +1,6 @@
+[submodule "efficientdet-pytorch"]
+	path = efficientdet-pytorch
+	url = https://github.com/rwightman/efficientdet-pytorch.git
+[submodule "combustion"]
+	path = combustion
+	url = https://github.com/TidalPaladin/combustion.git

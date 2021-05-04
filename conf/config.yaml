@@ -1,0 +1,8 @@
+defaults:
+  - dataset: coco
+  - model: fcos
+  - optimizer: adam
+  - trainer: local
+  - schedule: one_cycle
+  - sweeper:
+  - hydra: custom

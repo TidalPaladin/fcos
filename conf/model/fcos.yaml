@@ -1,0 +1,23 @@
+# @package _group_
+_target_: fcos.model.EfficientDetFCOS
+params:
+
+  # Backbone variant - backbone overrides compound_coeff choice
+  # See https://github.com/rwightman/efficientdet-pytorch for options
+  effdet_backbone: "tf_efficientdet_d4"
+
+  # NOTE: Currently compound_coeff doesn't do anything
+  #compound_coeff: 0
+
+  num_classes: 91
+  threshold: 0.05
+  nms_threshold: 0.5
+
+  # Stride at each FPN level
+  #strides: [8, 16, 32]
+  
+  # Target sizes for each FPN level
+  #sizes: 
+  #  - [-1, 64]
+  #  - [64, 128]
+  #  - [128, 10000000]
